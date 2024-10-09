@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-heading{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.r2h-team{
+    background-color:chartreuse;
+    color:teal;
+}
+.r2w-team{
+background-color:tomato;
+color: #fff;
+}
+.trt-team{
+background-color:slateblue;
+color: #fff;
+}
+
+.team-common{
+    padding: 2px 12px;
+    border-radius: 50px;
+}
