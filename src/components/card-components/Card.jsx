@@ -84,6 +84,22 @@ const Card = () => {
   summary : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!'
 } 
 ]
+
+const btnStyle = {
+  marginTop : '1rem',
+  padding : "0.5rem 2rem",
+  border : '1px solid black',
+  borderRadius : '10px',
+  // backgroundColor : `${details[Array.length].id>=5 ? 'green' : 'red'}`
+  // backgroundColor:
+  //   (details.team === 'Top Real Team') ? '#6a5acd' :
+  //   (details.team === 'Round to Hell Team') ? '#7fff00' :
+  //   (details.team === 'Round to World Team') ? '#ff6347' :
+  //   ''
+  // backgroundColor: `${details.team==='Top Real Team' ? '#6a5acd' : details.team==='Round to Hell Team' ? '#7fff00' : details.team==='Round to World Team' ? '#ff6347' : 'red'}`
+  // backgroundColor: 'red'
+}
+// console.log(details[4].id)
 // check the detils what is showing the in the array API Like Data 
 // console.log(details)
 // if i check the id using filter method
@@ -110,6 +126,9 @@ const Card = () => {
                 </span></li>
             </div>  
             <p className='mt-5 text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!</p>
+        <button style={btnStyle}>{(detail.team==='Round to Hell Team') ? 'R2H Team' : 
+  (detail.team==='Round to World Team') ? 'R2W Team' : 
+  (detail.team==='Top Real Team') ? 'TRT Team' : ''}</button>
         </ul>
         </div>
         

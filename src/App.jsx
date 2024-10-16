@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import Card from './components/card-components/Card'
+import Event from './components/event-components/Event'
 
 function App() {
  {/* Passing a Dynamimc Value */}
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
     
+{/* <Event/> */}
 <Card/>
 <br /><br /><br /><br /><br />
 
