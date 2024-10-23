@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle-switch{
+    width: 20%;
+    margin: 0 auto;
+    background: lightgrey;
+    padding: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.toggle-btn {
+    width: 60px;
+    height: 60px;
+    background: green;
+    padding: 1rem;
+    border-radius: 50px;
+    border: 2px solid white;
+    color: #fff;
+}
+
+.on{
+    background-color: green;
+    transform: translateX(150px);
+    transition: ease-in-out 0.4s;
+}
+.off{
+    background-color: red;
+    transform: translateX(0);
+    transition: ease-in-out 0.4s;
+}

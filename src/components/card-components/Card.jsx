@@ -48,6 +48,15 @@ const Card = () => {
         summary : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!'
     },
     {
+      id : 9,
+      name : 'Nadir',
+      age : 'NA',
+      designation : 'Comedian',
+      team:'Top Real Team',
+      imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbtJPgLTQSZISbJyJyngT7yP9BGYk1QdNXw&s',
+      summary : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!'
+    } ,  
+    {
       id : 6,
       name : 'Anas',
       age : 24,
@@ -55,7 +64,7 @@ const Card = () => {
       team:'Round to World Team',
       imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUkevGZD53siZeUF-FMMJkZTCPmKKMoCpLjw&s',
       summary : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!'
-  },  
+  },
   {
     id : 7,
     name : 'Faizan',
@@ -73,16 +82,8 @@ const Card = () => {
         team:'Round to Hell Team',
         imageURL : 'https://media.licdn.com/dms/image/v2/D4D22AQG5NgrGeQ4t3Q/feedshare-shrink_800/feedshare-shrink_800/0/1695205381704?e=2147483647&v=beta&t=FOh9XoQ4-tB-ePaD6vG0ph1IC3RhnMRHbOqry9g-qfk',
         summary : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!'
-    },
-{
-  id : 9,
-  name : 'Nadir',
-  age : 'NA',
-  designation : 'Comedian',
-  team:'Top Real Team',
-  imageURL : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQbtJPgLTQSZISbJyJyngT7yP9BGYk1QdNXw&s',
-  summary : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!'
-} 
+    }
+
 ]
 
 const btnStyle = {
@@ -110,7 +111,9 @@ const btnStyle = {
     <div className='grid grid-cols-3 items-center justify-center gap-5 mt-16 w-full mx-auto'>
 
       {details.map((detail)=>(
-        <div key={detail.id} className="card m-auto w-full shadow-2xl rounded-lg">
+        <div key={detail.id} className={`card m-auto w-full shadow-2xl rounded-lg ${(detail.team==='Round to Hell Team') ? 'r2h-team' : 
+              (detail.team==='Round to World Team') ? 'r2w-team' : 
+              (detail.team==='Top Real Team') ? 'trt-team' : ''}`}>
         <ul style={{listStyle:'none'}}>
               <img src={detail.imageURL} alt={`${detail.name}'s Profile`} className=' w-full h-52 object-fill rounded-md ' />
               <div className='gap-5 text-left'>
@@ -119,9 +122,7 @@ const btnStyle = {
             <li>Designation : {detail.designation}</li>
             <li>Team : &nbsp; 
               <span className=
-              {`team-common ${(detail.team==='Round to Hell Team') ? 'r2h-team' : 
-              (detail.team==='Round to World Team') ? 'r2w-team' : 
-              (detail.team==='Top Real Team') ? 'trt-team' : ''}`}>
+              {`team-common `}>
                 {detail.team}
                 </span></li>
             </div>  

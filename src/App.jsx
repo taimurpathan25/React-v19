@@ -4,6 +4,8 @@ import Card from './components/card-components/Card'
 import Event from './components/event-components/Event'
 import EventWithProps from './components/event-components/EventWithProps'
 import State from './components/hooks-components/State'
+import { StateWithObject } from './components/hooks-components/StateWithObject'
+import { ToggleButton } from './projects/toggle-button/ToggleButton'
 
 function App() {
  {/* Passing a Dynamimc Value */}
@@ -16,7 +18,9 @@ function App() {
     
 {/* <Event/> */}
 {/* <EventWithProps/> */}
-<State/>
+{/* <State/> */}
+{/* <StateWithObject/> */}
+<ToggleButton/>
 <Card/>
 <br /><br /><br /><br /><br />
 
