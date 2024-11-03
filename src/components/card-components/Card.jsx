@@ -109,7 +109,6 @@ const btnStyle = {
     <>
     <h1 className='main-heading'>All Comedians</h1>
     <div className='grid grid-cols-3 items-center justify-center gap-5 mt-16 w-full mx-auto'>
-
       {details.map((detail)=>(
         <div key={detail.id} className={`card m-auto w-full shadow-2xl rounded-lg ${(detail.team==='Round to Hell Team') ? 'r2h-team' : 
               (detail.team==='Round to World Team') ? 'r2w-team' : 

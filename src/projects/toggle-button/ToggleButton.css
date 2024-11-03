@@ -5,30 +5,33 @@
 }
 
 .toggle-switch{
-    width: 20%;
-    margin: 0 auto;
+    width: 83px;
+    /* margin: 0 auto; */
     background: lightgrey;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 50px;
     cursor: pointer;
+    border: 1px solid white;
 }
-.toggle-btn {
-    width: 60px;
-    height: 60px;
-    background: green;
-    padding: 1rem;
+.toggle-btn{
+    width: 45px;
+    height: 35px;
+    /* background: yellow; */
+    padding: 4px 0px;
     border-radius: 50px;
     border: 2px solid white;
     color: #fff;
 }
 
 .on{
-    background-color: green;
-    transform: translateX(150px);
+    background-color: white;
+    color: black;
+    transform: translateX(35px);
     transition: ease-in-out 0.4s;
 }
 .off{
-    background-color: red;
+    background-color: black;
+    color: white;
     transform: translateX(0);
     transition: ease-in-out 0.4s;
 }

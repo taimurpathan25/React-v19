@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Card from './components/card-components/Card'
 import Event from './components/event-components/Event'
@@ -6,8 +6,25 @@ import EventWithProps from './components/event-components/EventWithProps'
 import State from './components/hooks-components/State'
 import { StateWithObject } from './components/hooks-components/StateWithObject'
 import { ToggleButton } from './projects/toggle-button/ToggleButton'
+import Todo from './projects/todo-app/Todo'
+import ShortCircuitEvalutaion from './projects/short-circuit-evaluation/ShortCircuitEvalutaion'
+import UseState from './components/hooks-components/all-hooks/use-state/UseState'
+import RegistrationForm from './components/hooks-components/all-hooks/use-state/RegistrationForm'
+import RegistrationReactFormHandling from './components/hooks-components/all-hooks/use-state/RegistrationReactFormHandling'
+import LoginForm from './components/hooks-components/all-hooks/use-state/LoginForm'
+import ContactForm from './components/hooks-components/all-hooks/use-state/ContactForm'
 
 function App() {
+
+  // START TOGGLE BUTTON 
+const [isDarkMode, setIsDarkMode] = useState(false)
+ // function for Toggle the dark/light mode
+ function handleToggle(){
+  setIsDarkMode(!isDarkMode);
+ }
+//  End
+  // END TOGGLE BUTTON '
+
  {/* Passing a Dynamimc Value */}
 //  const title = 'Character Goes Desi';
 //  const rating = '4.8 / 5';
@@ -15,13 +32,20 @@ function App() {
  // End Passing a Dynamimc Value
   return (
     <>
-    
+    <div className={`app ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
 {/* <Event/> */}
 {/* <EventWithProps/> */}
 {/* <State/> */}
 {/* <StateWithObject/> */}
-<ToggleButton/>
-<Card/>
+{/* <ShortCircuitEvalutaion/> */}
+<ToggleButton onToggle={handleToggle} isDarkMode={isDarkMode}/>
+{/* <RegistrationForm/> */}
+{/* <RegistrationReactFormHandling/> */}
+{/* <LoginForm/> */}
+<ContactForm/>
+{/* <Todo/> */}
+{/* <UseState/> */}
+{/* <Card /> */}
 <br /><br /><br /><br /><br />
 
     {/* <img src="https://i.ytimg.com/vi/5KhZeWfiVRM/sddefault.jpg" alt="" />
@@ -34,6 +58,7 @@ function App() {
     <PropComponent name='Nazim Ahemd' age='26'/>
     <PropComponent name='Wasim Ahemd' age='27'/> */}
     {/* End Passing a value for Props */}
+    </div>
     </>
   )
 }

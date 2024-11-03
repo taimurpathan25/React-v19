@@ -1,0 +1,29 @@
+/* Start Registration Form Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-form {
+    background-color: #44a7ef99;
+   padding: 20px;
+   width: 35%;
+   margin: 0 auto;
+   border-radius: 5px;
+   box-shadow:  0 0 5px blue;
+}
+.main-form input, textarea{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 30px auto;
+    border-radius: 8px;
+}
+.main-form button{
+    background-color: silver;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+/* End Registration Form Css */

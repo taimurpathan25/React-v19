@@ -23,6 +23,14 @@ color: #fff;
 }
 
 .team-common{
-    padding: 2px 12px;
+    /* padding: 2px 12px; */
     border-radius: 50px;
 }
+
+.light-card {
+    background-color: #f9f9f9;
+  }
+  .dark-card {
+    background-color: #333;
+  }
+  
