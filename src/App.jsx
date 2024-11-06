@@ -13,6 +13,8 @@ import RegistrationForm from './components/hooks-components/all-hooks/use-state/
 import RegistrationReactFormHandling from './components/hooks-components/all-hooks/use-state/RegistrationReactFormHandling'
 import LoginForm from './components/hooks-components/all-hooks/use-state/LoginForm'
 import ContactForm from './components/hooks-components/all-hooks/use-state/ContactForm'
+import UseEffect from './components/hooks-components/all-hooks/use-effect/UseEffect'
+import UseEffectCleanup from './components/hooks-components/all-hooks/use-effect/UseEffectCleanup'
 
 function App() {
 
@@ -39,13 +41,22 @@ const [isDarkMode, setIsDarkMode] = useState(false)
 {/* <StateWithObject/> */}
 {/* <ShortCircuitEvalutaion/> */}
 <ToggleButton onToggle={handleToggle} isDarkMode={isDarkMode}/>
+{/* <Todo/> */}
+{/* <Card /> */}
+
+{/* USE STATE HOOKS */}
 {/* <RegistrationForm/> */}
 {/* <RegistrationReactFormHandling/> */}
 {/* <LoginForm/> */}
-<ContactForm/>
-{/* <Todo/> */}
+{/* <ContactForm/> */}
 {/* <UseState/> */}
-{/* <Card /> */}
+{/* END */}
+
+{/* USE EFFECT HOOKS */}
+{/* <UseEffect/> */}
+<UseEffectCleanup/>
+{/* END */}
+
 <br /><br /><br /><br /><br />
 
     {/* <img src="https://i.ytimg.com/vi/5KhZeWfiVRM/sddefault.jpg" alt="" />

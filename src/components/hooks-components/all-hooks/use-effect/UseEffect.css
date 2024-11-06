@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-counter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-counter h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-counter span{
+    font-size: 4rem;
+    font-weight: 900;
+}
