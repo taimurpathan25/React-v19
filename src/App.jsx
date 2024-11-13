@@ -15,6 +15,7 @@ import LoginForm from './components/hooks-components/all-hooks/use-state/LoginFo
 import ContactForm from './components/hooks-components/all-hooks/use-state/ContactForm'
 import UseEffect from './components/hooks-components/all-hooks/use-effect/UseEffect'
 import UseEffectCleanup from './components/hooks-components/all-hooks/use-effect/UseEffectCleanup'
+import HowNotToFetchApi from './components/hooks-components/all-hooks/use-effect/HowNotToFetchApi'
 
 function App() {
 
@@ -54,7 +55,8 @@ const [isDarkMode, setIsDarkMode] = useState(false)
 
 {/* USE EFFECT HOOKS */}
 {/* <UseEffect/> */}
-<UseEffectCleanup/>
+{/* <UseEffectCleanup/> */}
+<HowNotToFetchApi/>
 {/* END */}
 
 <br /><br /><br /><br /><br />
