@@ -16,6 +16,7 @@ import ContactForm from './components/hooks-components/all-hooks/use-state/Conta
 import UseEffect from './components/hooks-components/all-hooks/use-effect/UseEffect'
 import UseEffectCleanup from './components/hooks-components/all-hooks/use-effect/UseEffectCleanup'
 import HowNotToFetchApi from './components/hooks-components/all-hooks/use-effect/HowNotToFetchApi'
+import UseRef from './components/hooks-components/all-hooks/use-ref/UseRef'
 
 function App() {
 
@@ -56,7 +57,8 @@ const [isDarkMode, setIsDarkMode] = useState(false)
 {/* USE EFFECT HOOKS */}
 {/* <UseEffect/> */}
 {/* <UseEffectCleanup/> */}
-<HowNotToFetchApi/>
+{/* <HowNotToFetchApi/> */}
+<UseRef/>
 {/* END */}
 
 <br /><br /><br /><br /><br />
