@@ -17,6 +17,15 @@ import UseEffect from './components/hooks-components/all-hooks/use-effect/UseEff
 import UseEffectCleanup from './components/hooks-components/all-hooks/use-effect/UseEffectCleanup'
 import HowNotToFetchApi from './components/hooks-components/all-hooks/use-effect/HowNotToFetchApi'
 import UseRef from './components/hooks-components/all-hooks/use-ref/UseRef'
+import Forwardref from './components/hooks-components/all-hooks/use-ref/Forwardref'
+import UseId from './components/hooks-components/all-hooks/use-id/UseId'
+import PropDrilling from './components/PropDrilling'
+import { BioProvider } from './components/hooks-components/all-hooks/context-api/Index'
+import Home from './components/hooks-components/all-hooks/context-api/Home'
+import About from './components/hooks-components/all-hooks/context-api/About'
+import Services from './components/hooks-components/all-hooks/context-api/Services'
+import { LightDark, ThemeProvider } from './components/hooks-components/all-hooks/context-api/LightDark'
+import UseReducer from './components/hooks-components/all-hooks/use-reducer/UseReducer'
 
 function App() {
 
@@ -58,7 +67,20 @@ const [isDarkMode, setIsDarkMode] = useState(false)
 {/* <UseEffect/> */}
 {/* <UseEffectCleanup/> */}
 {/* <HowNotToFetchApi/> */}
-<UseRef/>
+{/* <UseRef/> */}
+{/* <Forwardref/> */}
+{/* <UseId/> */}
+{/* <PropDrilling/> */}
+{/* <Index/> */}
+{/* <BioProvider>
+  <Home/>
+  <About/>
+  <Services/>
+  </BioProvider> */}
+  {/* <ThemeProvider>
+  <LightDark />
+  </ThemeProvider> */}
+  <UseReducer/>
 {/* END */}
 
 <br /><br /><br /><br /><br />
