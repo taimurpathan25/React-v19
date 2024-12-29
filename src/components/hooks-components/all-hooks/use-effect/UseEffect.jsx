@@ -28,11 +28,11 @@ useEffect(() => {
         id="" 
         style={{width:'20%',margin:'0 auto',border:'1px solid',borderRadius:'5px', paddingLeft:'10px'}}
         value={name}
-        onChange={(e)=>setName(e.target.value)}
+        onChange={(e) => setName(e.target.value)}
         />
         <button 
         className='border-4 px-2 py-1 w-20 mx-auto rounded-md'
-        onClick={()=>{setName('')}}
+        onClick={() => {setName('')}}
         >Reset</button>
     </div>
     </div>

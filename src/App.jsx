@@ -26,6 +26,7 @@ import About from './components/hooks-components/all-hooks/context-api/About'
 import Services from './components/hooks-components/all-hooks/context-api/Services'
 import { LightDark, ThemeProvider } from './components/hooks-components/all-hooks/context-api/LightDark'
 import UseReducer from './components/hooks-components/all-hooks/use-reducer/UseReducer'
+import UseMemo from './components/hooks-components/all-hooks/use-memo/UseMemo'
 
 function App() {
 
@@ -80,8 +81,12 @@ const [isDarkMode, setIsDarkMode] = useState(false)
   {/* <ThemeProvider>
   <LightDark />
   </ThemeProvider> */}
-  <UseReducer/>
+  {/* <UseReducer/> */}
+  <UseMemo/>
 {/* END */}
+
+
+
 
 <br /><br /><br /><br /><br />
 

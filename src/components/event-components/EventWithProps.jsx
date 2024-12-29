@@ -1,26 +1,28 @@
 import React from 'react'
 
+// Parent Component 
 const EventWithProps = () => {
-
+  
   const handleUser = (user) =>{
     confirm(`Hey ${user} You are Good Boy`);
     console.log("Clicking");
   }
-
+  
   const handleHover = () => {
     alert('Hey You are Welcome!');
     console.log("Hovering");
   }
-
+  
   return (
     <>
-<ChildComponent onClick={()=>handleUser('Pathan')} onMouseEnter={handleHover}/>
+       <ChildComponent onClick={()=>handleUser('Pathan')} onMouseEnter={handleHover}/>
     </>
   )
 }
-
 export default EventWithProps;
 
+
+// Child Component 
 const ChildComponent = (props) => {
   
   const handleSize=()=>{

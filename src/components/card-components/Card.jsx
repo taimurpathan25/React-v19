@@ -127,8 +127,8 @@ const btnStyle = {
             </div>  
             <p className='mt-5 text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat debitis officiis eligendi laboriosam molestias nam voluptatibus nemo dicta fuga!</p>
         <button style={btnStyle}>{(detail.team==='Round to Hell Team') ? 'R2H Team' : 
-  (detail.team==='Round to World Team') ? 'R2W Team' : 
-  (detail.team==='Top Real Team') ? 'TRT Team' : ''}</button>
+        (detail.team==='Round to World Team') ? 'R2W Team' : 
+        (detail.team==='Top Real Team') ? 'TRT Team' : ''}</button>
         </ul>
         </div>
         

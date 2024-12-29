@@ -24,7 +24,8 @@ const Event = () => {
         fontSize:'1.2rem',
         margin:'10px'
     }
-  return (<>
+  return (
+  <>
     {/* Function Component with Named Function  */}
     <button style={btnEventStyle} onClick={eventButtonClick}>Click Func Name</button>
     <button style={btnEventStyle} onClick={(event)=>{eventButtonClick(event)}}>Click Func Name 2</button>
@@ -41,7 +42,8 @@ const Event = () => {
     {/* Function Component with Inline Arrow Function */}
     <button style={btnEventStyle} onClick={()=>{argumentClick('Pathan')}}>Click with Pass Argument Func</button>
     {/* End */}
-    </>)
+    </>
+    )
 }
 
 export default Event

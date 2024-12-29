@@ -9,7 +9,7 @@ export const ThemeProvider = ({children}) => {
 
     const handleToggleTheme = () => {
         return(
-            setTheme((preValue)=>{return preValue==='dark' ? 'light' : 'dark'})
+            setTheme((preValue) => {return preValue ==='dark' ? 'light' : 'dark'})
         )
     }
     

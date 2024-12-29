@@ -6,7 +6,7 @@ import '../../../../App.css';
 
 const reducer = (state, action) => {
     
-    // console.log(state,action)
+    console.log(state,action)
 
     // using IFELSE STATEMENT
     // if (action.type==='increment') {
@@ -29,6 +29,7 @@ const reducer = (state, action) => {
     switch (action.type) {
         case 'name':
         return {
+            // ...state,
             name:action.changeName,
             age:state.age,
             designation:state.designation
@@ -36,12 +37,14 @@ const reducer = (state, action) => {
         };
         case 'age':
         return {
+            // ...state,
             name:state.name,
             age:state.age+1,
             designation:state.designation
         };
         case 'designation':
         return {
+            // ...state,
             name:state.name,
             age:state.age,
             designation:action.changeDesignation
