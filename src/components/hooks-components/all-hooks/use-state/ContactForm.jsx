@@ -20,9 +20,9 @@ const ContactForm = () => {
         setContactDetail((prevValue)=>({...prevValue, [name]:value}))
         
     }
-
 // End 2nd Method
-   const handleSubmit = (e) => {
+   
+const handleSubmit = (e) => {
     e.preventDefault()
     // const contactData = {
     //     username:username, // key : value
