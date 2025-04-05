@@ -10,7 +10,7 @@ export function ToggleButton({onToggle, isDarkMode}) {
   return (
     <div className='toggle-switch' style={{backgroundColor:isDarkMode ? '#ccc' : ''}} onClick={onToggle}>
         <div className={`toggle-btn ${isDarkMode  ? 'on' : 'off'}`}>
-            <span>{isDarkMode  ? 'light' : 'dark'}</span>
+            {/* <span>{isDarkMode  ? 'light' : 'dark'}</span> */}
         </div>
     </div>
   )
