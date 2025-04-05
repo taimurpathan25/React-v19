@@ -39,7 +39,7 @@ const Event = () => {
     <button style={btnEventStyle} onClick={()=>alert('hey this is inline arrow func')}>Click with Inline Arrow Func</button>
     {/* End */}
 
-    {/* Function Component with Inline Arrow Function */}
+    {/* Argument Passing Function Component with Inline Arrow Function */}
     <button style={btnEventStyle} onClick={()=>{argumentClick('Pathan')}}>Click with Pass Argument Func</button>
     {/* End */}
     </>
